@@ -1,26 +1,27 @@
 <?php
-// Version: 2.0; EmailTemplates
+// Version: 2.0; EmailTemplatesf
 
 // Since all of these strings are being used in emails, numeric entities should be used.
 
 // Do not translate anything that is between {}, they are used as replacement variables and MUST remain exactly how they are.
 
-$txt['regards_team'] = 'Saygılarımızla,
+$txt['regards_team'] = 'Saygilar,
 {FORUMNAME} Ekibi.';
 
-$txt['scheduled_approval_email_topic'] = 'Aşağıdaki konular onaylanmayı bekliyor:';
-$txt['scheduled_approval_email_msg'] = 'Aşağıdaki iletiler onaylanmayı bekliyor:';
+
+$txt['scheduled_approval_email_topic'] = 'Asagidaki konular onaylanmayi bekliyor:';
+$txt['scheduled_approval_email_msg'] = 'Asagidaki iletiler onaylanmayi bekliyor:';
 
 $txt['emailtemplate_resend_activate_message'] = array(
 	'desc' => 'The email sent to a user when they have registered and their account needs activating through email (as the second or later email)',
-	'subject' => '{FORUMNAME}: Hoşgeldiniz!',
-	'body' => 'Thank you for registering at {FORUMNAME}. Your username is {USERNAME}. If you forget your password, you can reset it by visiting {FORGOTPASSWORDLINK}.
+	'subject' => '{FORUMNAME}: Hosgeldiniz!',
+	'body' => '{FORUMNAME}\'e kayit oldugunuz icin tesekkurler. Kullanici adiniz: {USERNAME}. Sifrenizi unutursaniz asagidaki linke tiklayabilirsiniz {FORGOTPASSWORDLINK}.
 
-Giriş yapabilmeden önce hesabınızı aktifleştirmeniz gerekmektedir. Üyeliğinizi tamamlamak için lütfen bu adrese tıklayınız:
+Giris yapmadan once hesabinizi aktiflestirmeniz gerekmektedir. Uyeliginizi tamamlamak icin lUtfen bu adrese tiklayiniz:
 
 {ACTIVATIONLINK}
 
-Eğer yukarıdaki adres ile ilgili sorunlar yaşarsanız, {ACTIVATIONLINKWITHOUTCODE} adresini ziyaret edebilir ve "{ACTIVATIONCODE}" kodunu kullanarak üyeliğinizi aktifleştirebilirsiniz.
+Eger yukaridaki adres ile ilgili sorunlar yasarsaniz, {ACTIVATIONLINKWITHOUTCODE} adresini ziyaret edebilir ve "{ACTIVATIONCODE}" kodunu kullanarak Uyeliginizi aktiflestirebilirsiniz.
 
 {REGARDS}',
 );
@@ -59,18 +60,18 @@ This is due to the following reason: {REFUSEREASON}
 
 $txt['emailtemplate_admin_approve_accept'] = array(
 	'desc' => 'The email sent to a user when their account was manually activated (e.g. not through email) by the administrator.',
-	'subject' => 'Welcome to {FORUMNAME}',
-	'body' => 'Welcome, {REALNAME}!
+	'subject' => '{FORUMNAME}\'a Hos Geldiniz',
+	'body' => '{REALNAME} Hos Geldiniz!
 
-Your account has been activated manually by the admin and you can now login and post. Your username is: {USERNAME}. If you forget your password, you can change it at {FORGOTPASSWORDLINK}.
+Hesabiniz olusturulmustur. Forumumuza giris yapip konu acabilirsiniz. Kullanici Adiniz: {USERNAME}. Sifrenizi unutursaniz asagidaki linke tiklayebilirsiniz. {FORGOTPASSWORDLINK}.
 
 {REGARDS}',
 );
 
 $txt['emailtemplate_admin_approve_activation'] = array(
 	'desc' => 'The email sent to a user when their account was approved by the administrator (e.g. through admin approval)',
-	'subject' => 'Welcome to {FORUMNAME}',
-	'body' => 'Welcome, {REALNAME}!
+	'subject' => '{FORUMNAME}\'a Hos Geldiniz',
+	'body' => '{REALNAME} Hos Geldiniz!
 
 Your account on {FORUMNAME} has been approved by the forum administrator. Before you can login, you must first activate your account by selecting the following link:
 
@@ -118,7 +119,7 @@ Should you have any problems with the activation, please visit {ACTIVATIONLINKWI
 
 $txt['emailtemplate_admin_register_activate'] = array(
 	'desc' => 'The email sent to users who have been registered in the administration panel, and it requires email validation.',
-	'subject' => 'Welcome to {FORUMNAME}',
+	'subject' => '{FORUMNAME}\'a Hos Geldiniz!',
 	'body' => 'A member account was created for you at {FORUMNAME}. Your username is {USERNAME} and your password is {PASSWORD}.
 
 Before you can login, you must first activate your account by selecting the following link:
@@ -132,7 +133,7 @@ Should you have any problems with the activation, please visit {ACTIVATIONLINKWI
 
 $txt['emailtemplate_admin_register_immediate'] = array(
 	'desc' => 'The email sent to users who have been registered in the administration panel and no further action is required.',
-	'subject' => 'Welcome to {FORUMNAME}',
+	'subject' => '{FORUMNAME}\'a Hos Geldiniz!',
 	'body' => 'A member account was created for you at {FORUMNAME}. Your username is {USERNAME} and your password is {PASSWORD}.
 
 You can reach {FORUMNAME} by visiting {SCRIPTURL} in your browser.
@@ -155,7 +156,7 @@ You can view the full announcement by following this link:
 
 $txt['emailtemplate_notify_boards_once_body'] = array(
 	'desc' => 'The email sent to users who have requested notifications on a given board, including the body, for the first new topic in that board (until they log in and read).',
-	'subject' => 'New Topic: {TOPICSUBJECT}',
+	'subject' => 'Yeni Konu: {TOPICSUBJECT}',
 	'body' => 'A new topic, \'{TOPICSUBJECT}\', has been made on a board you are watching.
 
 You can see it at
@@ -175,14 +176,14 @@ Unsubscribe to new topics from this board by using this link:
 $txt['emailtemplate_notify_boards_once'] = array(
 	'desc' => 'The email sent to users who have requested notifications on a given board, for the first new topic in that board (until they log in and read).',
 	'subject' => 'Yeni Konu: {TOPICSUBJECT}',
-	'body' => 'Haberdar edilmeyi seçtiğiniz bir bölümde, \'{TOPICSUBJECT}\' başlıklı bir konu açılmıştır.
+	'body' => 'Haberdar edilmeyi sectiginiz bir bolUmde, \'{TOPICSUBJECT}\' baslikli bir konu acilmistir.
 
-Konuyu görüntülemek için aşağıdaki bağlantıya tıklayınız:
+Konuyu gorUntUlemek icin asagidaki baglantiya tiklayiniz:
 {TOPICLINK}
 
 More topics may be posted, but you won\'t receive more email notifications until you return to the board and read some of them.
 
-Bu bölümden daha fazla duyuru almak istemiyorsanız, aşağıdaki bağlantıya tıklayınız:
+Bu bolUmden daha fazla duyuru almak istemiyorsaniz, asagidaki baglantiya tiklayiniz:
 {UNSUBSCRIBELINK}
 
 {REGARDS}',
@@ -190,7 +191,7 @@ Bu bölümden daha fazla duyuru almak istemiyorsanız, aşağıdaki bağlantıya
 
 $txt['emailtemplate_notify_boards_body'] = array(
 	'desc' => 'The email sent to users who have requested notifications on a given board, including the body.',
-	'subject' => 'New Topic: {TOPICSUBJECT}',
+	'subject' => 'Yeni Konu: {TOPICSUBJECT}',
 	'body' => 'A new topic, \'{TOPICSUBJECT}\', has been made on a board you are watching.
 
 You can see it at
@@ -207,7 +208,7 @@ Unsubscribe to new topics from this board by using this link:
 
 $txt['emailtemplate_notify_boards'] = array(
 	'desc' => 'The email sent to users who have requested notifications on a given board.',
-	'subject' => 'New Topic: {TOPICSUBJECT}',
+	'subject' => 'Yeni Konu: {TOPICSUBJECT}',
 	'body' => 'A new topic, \'{TOPICSUBJECT}\', has been made on a board you are watching.
 
 You can see it at
@@ -253,7 +254,7 @@ To edit your subscriptions visit the following URL:
 
 $txt['emailtemplate_activate_reactivate'] = array(
 	'desc' => 'The email sent to a user that has changed their email address and requires it be re-validated.',
-	'subject' => 'Welcome back to {FORUMNAME}',
+	'subject' => '{FORUMNAME}\'a Tekrar Hos Geldiniz!',
 	'body' => 'In order to re-validate your email address, your account has been deactivated. Click the following link to activate it again:
 {ACTIVATIONLINK}
 
@@ -264,9 +265,9 @@ Should you have any problems with activation, please visit {ACTIVATIONLINKWITHOU
 
 $txt['emailtemplate_forgot_password'] = array(
 	'desc' => 'The email sent to a user when "forgot password" was used on their account.',
-	'subject' => 'New password for {FORUMNAME}',
-	'body' => 'Dear {REALNAME},
-This mail was sent because the \'forgot password\' function has been applied to your account. To set a new password, click the following link:
+	'subject' => '{FORUMNAME} Forumu icin Yeni Parola ',
+	'body' => 'Sayin {REALNAME},
+Bu e-posta, forum\'da bulunan \'Sifremi Unuttum\' fonksiyonu kullanildigi icin gonderilmistir. Yeni bir sifre atamak icin lutfen asagidaki adrese tiklayiniz:
 {REMINDLINK}
 
 IP: {IP}
@@ -358,28 +359,32 @@ You may change it after you login by going to the profile page, or by visiting t
 
 $txt['emailtemplate_register_activate'] = array(
 	'desc' => 'The email sent to users when registering and need to activate their email address.',
-	'subject' => 'Welcome to {FORUMNAME}',
-	'body' => 'Thank you for registering at {FORUMNAME}. Your username is {USERNAME}. If you forget your password, you can reset it by visiting {FORGOTPASSWORDLINK}.
+	'subject' => '{FORUMNAME}\'a Hos Geldiniz!',
+	'body' => '{FORUMNAME}\'a Kayit oldugunuz icin tesekkurler. Kullanici Adiniz: {USERNAME}. Sifrenizi unutursaniz eger, asagidaki linke tiklayarak sifirlayabilirsiniz.
 
-Before you can login, you first need to activate your account. To do so, please follow this link:
+{FORGOTPASSWORDLINK}.
+
+Giris yapmadan once hesabiniz aktiflestirmek icin altta linke tiklayiniz;
 
 {ACTIVATIONLINK}
 
-Should you have any problems with activation, please visit {ACTIVATIONLINKWITHOUTCODE} use the code "{ACTIVATIONCODE}".
+Aktivasyon ile ilgili sorun yasarsaniz eger, burayi ziyaret ederek; {ACTIVATIONLINKWITHOUTCODE} bu kodu kullanin "{ACTIVATIONCODE}".
 
 {REGARDS}',
 );
 
 $txt['emailtemplate_register_activate_approve'] = array(
 	'desc' => 'The email sent to users to activate their account, but when the administrator then has to approve their account.',
-	'subject' => '{FORUMNAME}: Hoşgeldiniz!',
-	'body' => 'Thank you for registering at {FORUMNAME}. Your username is {USERNAME}. If you forget your password, you can reset it by visiting {FORGOTPASSWORDLINK}.
+	'subject' => '{FORUMNAME}: Hosgeldiniz!',
+	'body' => '{FORUMNAME}\'a Kayit oldugunuz icin tesekkurler. Kullanici Adiniz: {USERNAME}. Sifrenizi unutursaniz eger, asagidaki linke tiklayarak sifirlayabilirsiniz.
 
-Before you can login, you must first activate your account by selecting the following link:
+{FORGOTPASSWORDLINK}.
+
+Giris yapmadan once hesabiniz aktiflestirmek icin altta linke tiklayiniz;
 
 {ACTIVATIONLINK}
 
-Should you have any problems with the activation, please visit {ACTIVATIONLINKWITHOUTCODE} and enter the code "{ACTIVATIONCODE}".
+Aktivasyon ile ilgili sorun yasarsaniz eger, burayi ziyaret ederek; {ACTIVATIONLINKWITHOUTCODE} bu kodu kullanin "{ACTIVATIONCODE}". 
 
 Once that has taken place, the administrator will review your application and decide whether to approve or reject it. Once a decision is made, a further email will be sent to you.
 
@@ -388,8 +393,10 @@ Once that has taken place, the administrator will review your application and de
 
 $txt['emailtemplate_register_coppa'] = array(
 	'desc' => 'The email sent to users when registering but then need to fill out the COPPA form for parental consent.',
-	'subject' => 'Welcome to {FORUMNAME}',
-	'body' => 'Thank you for registering at {FORUMNAME}. Your username is {USERNAME}. If you forget your password, you can change it at {FORGOTPASSWORDLINK}
+	'subject' => '{FORUMNAME}\'a Hos Geldiniz!',
+	'body' => '{FORUMNAME}\'a Kayit oldugunuz icin tesekkurler.Kullanici Adiniz: {USERNAME}. Sifrenizi unutursaniz eger, asagidaki linke tiklayarak sifirlayabilirsiniz.
+
+{FORGOTPASSWORDLINK}.
 
 Before you can login, the admin requires consent from your parent/guardian for you to join the community. You can obtain more information at the link below:
 
@@ -400,21 +407,21 @@ Before you can login, the admin requires consent from your parent/guardian for y
 
 $txt['emailtemplate_register_immediate'] = array(
 	'desc' => 'The email sent to users when registering and their account is immediately active.',
-	'subject' => 'Welcome to {FORUMNAME}',
-	'body' => 'Thank you for registering at {FORUMNAME}.
+	'subject' => '{FORUMNAME}\'a Hos Geldiniz!',
+	'body' => '{FORUMNAME}\'a Kayit oldugunuz icin tesekkurler.
 
-Your username is {USERNAME}.
+Kullanici Adiniz: {USERNAME}.
 
-If you forget your password, you may change it at:
+Sifrenizi unutursaniz eger, asagidaki linke tiklayarak sifirlayabilirsiniz.
 
-{FORGOTPASSWORDLINK}
+{FORGOTPASSWORDLINK}.
 
 {REGARDS}',
 );
 
 $txt['emailtemplate_register_pending'] = array(
 	'desc' => 'The email sent to users when they have registered and their account is awaiting administrator approval.',
-	'subject' => 'Welcome to {FORUMNAME}',
+	'subject' => '{FORUMNAME}\'a Hos Geldiniz!',
 	'body' => 'Your registration request at {FORUMNAME} has been received, {REALNAME}.
 
 The username you registered with was {USERNAME}. If you forget your password, you can change it at {FORGOTPASSWORDLINK}.
@@ -426,13 +433,13 @@ Before you can login and start using the forum, your request will be reviewed an
 
 $txt['emailtemplate_notification_reply'] = array(
 	'desc' => 'The email sent when a user is following a topic and it has been replied to.',
-	'subject' => 'Topic reply: {TOPICSUBJECT}',
-	'body' => 'A reply has been posted to a topic you are watching by {POSTERNAME}.
+	'subject' => 'Yeni Yorum: {TOPICSUBJECT}',
+	'body' => 'Takip ettiginiz bir konuya {POSTERNAME} tarafindan yorum yapildi.
 
-View the reply at:
+Yorumu goruntuleyin;
 {TOPICLINK}
 
-Unsubscribe to this topic by using this link:
+Konuyu takip etmeyi birakmak icin tiklayin;
 {UNSUBSCRIBELINK}
 
 {REGARDS}',
@@ -440,16 +447,16 @@ Unsubscribe to this topic by using this link:
 
 $txt['emailtemplate_notification_reply_body'] = array(
 	'desc' => 'The email sent when a user is following a topic and it has been replied to. The content of the post is included.',
-	'subject' => 'Topic reply: {TOPICSUBJECT}',
-	'body' => 'A reply has been posted to a topic you are watching by {POSTERNAME}.
+	'subject' => 'Yeni Yorum: {TOPICSUBJECT}',
+	'body' => 'Takip ettiginiz bir konuya {POSTERNAME} tarafindan yorum yapildi
 
-View the reply at:
+Yorumu goruntuleyin;
 {TOPICLINK}
 
-Unsubscribe to this topic by using this link:
+Konuyu takip etmeyi birakmak icin tiklayin;
 {UNSUBSCRIBELINK}
 
-The text of the reply is shown below:
+Yapilan Yorum:
 {MESSAGE}
 
 {REGARDS}',
@@ -457,32 +464,32 @@ The text of the reply is shown below:
 
 $txt['emailtemplate_notification_reply_once'] = array(
 	'desc' => 'The email sent when a user is following a topic, and will only receive it on the first new post.',
-	'subject' => 'Topic reply: {TOPICSUBJECT}',
-	'body' => 'A reply has been posted to a topic you are watching by {POSTERNAME}.
+	'subject' => 'Yeni Yorum: {TOPICSUBJECT}',
+	'body' => 'Takip ettiginiz bir konuya {POSTERNAME} tarafindan yorum yapildi
 
-View the reply at:
+Yorumu goruntuleyin;
 {TOPICLINK}
 
-Unsubscribe to this topic by using this link:
+Konuyu takip etmeyi birakmak icin tiklayin;
 {UNSUBSCRIBELINK}
 
-More replies may be posted, but you won\'t receive any more notifications until you read the topic.
+Konuya gelen yorumlari okuyana kadar tekrar bildirim gelmeyecektir.
 
 {REGARDS}',
 );
 
 $txt['emailtemplate_notification_reply_body_once'] = array(
 	'desc' => 'The email sent when a user is following a topic, and will only receive it on the first new post. The content of the post is included.',
-	'subject' => 'Topic reply: {TOPICSUBJECT}',
-	'body' => 'A reply has been posted to a topic you are watching by {POSTERNAME}.
+	'subject' => 'Yeni Yorum: {TOPICSUBJECT}',
+	'body' => 'Takip ettiginiz bir konuya {POSTERNAME} tarafindan yorum yapildi
 
-View the reply at:
+Yorumu goruntuleyin;
 {TOPICLINK}
 
-Unsubscribe to this topic by using this link:
+Konuyu takip etmeyi birakmak icin tiklayin;
 {UNSUBSCRIBELINK}
 
-The text of the reply is shown below:
+Yapilan Yorum:
 {MESSAGE}
 
 More replies may be posted, but you won\'t receive any more notifications until you read the topic.
@@ -492,7 +499,7 @@ More replies may be posted, but you won\'t receive any more notifications until 
 
 $txt['emailtemplate_notification_pin'] = array(
 	'desc' => 'The email sent when a user is following a topic, and the topic is subsequently pinned or unpinned.',
-	'subject' => 'Topic pinned: {TOPICSUBJECT}',
+	'subject' => 'Konu Sabitlendi: {TOPICSUBJECT}',
 	'body' => 'A topic you are watching has been pinned or unpinned by {POSTERNAME}.
 
 View the topic at:
@@ -506,7 +513,7 @@ Unsubscribe to this topic by using this link:
 
 $txt['emailtemplate_notification_lock'] = array(
 	'desc' => 'The email sent when a user is following a topic, and the topic is subsequently locked.',
-	'subject' => 'Topic locked: {TOPICSUBJECT}',
+	'subject' => 'Konu Kilitlendi: {TOPICSUBJECT}',
 	'body' => 'A topic you are watching has been locked by {POSTERNAME}.
 
 View the topic at:
@@ -542,13 +549,13 @@ $txt['emailtemplate_notification_remove'] = array(
 
 $txt['emailtemplate_notification_move'] = array(
 	'desc' => 'The email sent when a user is following a topic, and the topic is subsequently moved elsewhere.',
-	'subject' => 'Konu Taşınmıştır: {TOPICSUBJECT}',
-	'body' => 'Haberdar edilmeyi seçtiğiniz  konu, {POSTERNAME} tarafından başka bir bölüme taşınmıştır.
+	'subject' => 'Konu Tasinmistir: {TOPICSUBJECT}',
+	'body' => 'Haberdar edilmeyi sectiginiz  konu, {POSTERNAME} tarafindan baska bir bolUme tasinmistir.
 
-Konuyu görüntüleyin:
+Konuyu gorUntUleyin:
 {TOPICLINK}
 
-Bu bağlantıyı kullanarak aboneliğinizi iptal edin:
+Bu baglantiyi kullanarak aboneliginizi iptal edin:
 {UNSUBSCRIBELINK}
 
 {REGARDS}',
@@ -556,13 +563,13 @@ Bu bağlantıyı kullanarak aboneliğinizi iptal edin:
 
 $txt['emailtemplate_notification_merge'] = array(
 	'desc' => 'The email sent when a user is following a topic, and the topic is subsequently merged with another.',
-	'subject' => 'Konu Birleştirildi: {TOPICSUBJECT}',
-	'body' => 'Haberdar edilmeyi seçtiğiniz konu, {POSTERNAME} tarafından başka bir konu ile birleştirilmiştir.
+	'subject' => 'Konu Birlestirildi: {TOPICSUBJECT}',
+	'body' => 'Haberdar edilmeyi sectiginiz konu, {POSTERNAME} tarafindan baska bir konu ile birlestirilmistir.
 
-Birleştirilen konuyu görüntüleyin:
+Birlestirilen konuyu gorUntUleyin:
 {TOPICLINK}
 
-Bu bağlantıyı kullanarak aboneliğinizi iptal edin:
+Bu baglantiyi kullanarak aboneliginizi iptal edin:
 {UNSUBSCRIBELINK}
 
 {REGARDS}',
@@ -570,13 +577,13 @@ Bu bağlantıyı kullanarak aboneliğinizi iptal edin:
 
 $txt['emailtemplate_notification_split'] = array(
 	'desc' => 'The email sent when a user is following a topic, and the topic is subsequently split into more than one.',
-	'subject' => 'Konu Bölündü: {TOPICSUBJECT}',
-	'body' => 'Haberdar edilmeyi seçtiğiniz konu, {POSTERNAME} tarafından bölünmüştür.
+	'subject' => 'Konu BolUndU: {TOPICSUBJECT}',
+	'body' => 'Haberdar edilmeyi sectiginiz konu, {POSTERNAME} tarafindan bolUnmUstUr.
 
-Konudan kalanları görüntüleyin:
+Konudan kalanlari gorUntUleyin:
 {TOPICLINK}
 
-Bu bağlantıyı kullanarak aboneliğinizi iptal edin:
+Bu baglantiyi kullanarak aboneliginizi iptal edin:
 {UNSUBSCRIBELINK}
 
 {REGARDS}',
@@ -665,14 +672,14 @@ The following error occurred when processing a paid subscription
 
 $txt['emailtemplate_pm_email'] = array(
 	'desc' => 'The template used when sending notification of personal messages.',
-	'subject' => 'Yeni kişisel ileti: {SUBJECT}',
-	'body' => '{FORUMNAME} sitesinde {SENDERNAME} tarafından size yeni bir kişisel ileti gönderilmiştir.
+	'subject' => 'Yeni kisisel ileti: {SUBJECT}',
+	'body' => '{FORUMNAME} sitesinde {SENDERNAME} tarafindan size yeni bir kisisel ileti gonderilmistir.
 
-ÖNEMLİ: Bu sadece duyuru amaçlı bir iletidir. Lütfen bu e-postayı yanıtlamayınız.
+ONEMLi: Bu sadece duyuru amacli bir iletidir. LUtfen bu e-postayi yanitlamayiniz.
 
-Gönderilen İleti:
+Gonderilen ileti:
 
 {MESSAGE}
 
-Bu kişisel iletiyi yanıtla: {REPLYLINK}',
+Bu kisisel iletiyi yanitla: {REPLYLINK}',
 );
